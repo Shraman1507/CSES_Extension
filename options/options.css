@@ -1,0 +1,36 @@
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+#templates-list {
+    margin-top: 10px;
+}
+
+.template-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: 1px solid #eee;
+    margin-bottom: 5px;
+}
+
+#template-editor {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.hidden {
+    display: none;
+}
+
+textarea {
+    width: 100%;
+}

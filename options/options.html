@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSES Companion Options</title>
+    <link rel="stylesheet" type="text/css" href="options.css">
+</head>
+<body>
+    <h1>CSES Companion Options</h1>
+
+    <h2>API Settings</h2>
+    <div>
+        <label for="api-key">Judge0 API Key:</label>
+        <input type="text" id="api-key" size="50" placeholder="Enter your Judge0 RapidAPI Key">
+        <button id="save-api-key-btn">Save</button>
+        <p id="api-key-status" style="display: inline; margin-left: 10px;"></p>
+    </div>
+
+    <h2>Templates</h2>
+
+    <div>
+        <label for="template-language">Language:</label>
+        <select id="template-language">
+            <option value="cpp">C++</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+        </select>
+    </div>
+
+    <div id="templates-list"></div>
+
+    <button id="new-template-btn">New Template</button>
+
+    <div id="template-editor" class="hidden">
+        <input type="hidden" id="template-id">
+        <div>
+            <label for="template-name">Name:</label>
+            <input type="text" id="template-name">
+        </div>
+        <div>
+            <label for="template-code">Code:</label>
+            <textarea id="template-code" rows="10"></textarea>
+        </div>
+        <button id="save-template-btn">Save</button>
+        <button id="cancel-template-btn">Cancel</button>
+    </div>
+
+    <script src="../lib/templates.js"></script>
+    <script src="options.js"></script>
+</body>
+</html>
